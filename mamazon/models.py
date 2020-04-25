@@ -7,4 +7,6 @@ class Product(models.Model):
     description = models.TextField()
     thumbnail = models.ImageField(upload_to="thumbnails/")
 
+    def __str__(self):
+        return self.name
 # Create your models here.
